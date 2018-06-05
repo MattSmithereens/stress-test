@@ -1,11 +1,4 @@
 <!DOCTYPE html>
-<!-- Include several questions.
-One that lists warning signs of being negatively affected by stress ("Loss of sleep", "Feeling overwhelmed", etc.)
-One that lists health symptoms linked to high-stress ("High blood pressure", "anxiety", etc.)
-Another that lists recommended coping methods to deal with stress. ("Meditate", "Manage your time", "Pet a cat", etc.) Instruct users to check all that apply to them.
-Then, based on user answers, provide some guidance: For instance, if a user reports 4 stress-related symptoms, and 6 warning signs apply to them, suggest some resources to help them out.
-Or, if a user says 4 warning signs of high stress apply to them, but they also report using 5 of the recommended ways to manage stress, tell them they're doing a pretty good job.
-Include at least 3 possible results. -->
 <html>
 <head>
   <meta charset="utf-8">
@@ -156,8 +149,11 @@ Include at least 3 possible results. -->
      <button type="submit" class="btn btn-default btn-lg" id="submit">Submit Survey</button>
      <button type="reset" class="btn btn-default btn-lg" id="reset">Reset</button>
     </form>
-    <span id="results">
-    </span>
+    <div id="surveyResults">
+      <span id="scoreResults"></span>
+      <div class="results-image">
+      </div>
+    </div>
   </div>
 </body>
 </html>
