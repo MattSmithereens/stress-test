@@ -22,12 +22,14 @@ function parseTotals(warningVal, symptomsVal, copingVal) {
 }
 
 function displayResults(score) {
+  $("#results").fadeToggle(800);
+  $("#stressTest").hide();
   if (score <= MIN_CAP) {
-    //good
+    $("#results").text("You are doing great! Keep it up!");
   } else if (score > MIN_CAP && score <= MID_CAP) {
-    //okay but here's some tips
+    $("#results").text("You are doing okay, but here are some helpful tips...");
   } else if (score > MID_CAP) {
-    //seek help immeidately, show all resources
+    $("#results").text("You should seek help immediately. Please see resources below.");
   } else {
     alert("Stop trying to break things...");
   }
