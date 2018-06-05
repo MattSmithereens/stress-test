@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Include several questions.
+One that lists warning signs of being negatively affected by stress ("Loss of sleep", "Feeling overwhelmed", etc.)
+One that lists health symptoms linked to high-stress ("High blood pressure", "anxiety", etc.)
+Another that lists recommended coping methods to deal with stress. ("Meditate", "Manage your time", "Pet a cat", etc.) Instruct users to check all that apply to them.
+Then, based on user answers, provide some guidance: For instance, if a user reports 4 stress-related symptoms, and 6 warning signs apply to them, suggest some resources to help them out.
+Or, if a user says 4 warning signs of high stress apply to them, but they also report using 5 of the recommended ways to manage stress, tell them they're doing a pretty good job.
+Include at least 3 possible results. -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>STRESS TEST</title>
+</head>
+<body>
+  <div class="container">
+    <h1>STRESS TEST</h1>
+    <form id="stressTest">
+      <div class="form-group">
+        <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
+        <div class="checkbox">
+          <label for="warningSleep">
+            <input type="checkbox" name="warning" value="warningSleep" id="warningSleep">
+            Loss of sleep.
+          </label>
+        </div>
+        <div class="checkbox">
+          <label for="warningOverwhelmed">
+            <input type="checkbox" name="warning" value="warningOverwhelmed" id="warningOverwhelmed">
+            Feeling overwhelmed.
+          </label>
+        </div>
+        <div class="checkbox">
+          <label for="warningAppetite">
+            <input type="checkbox" name="warning" value="warningAppetite" id="warningAppetite">
+            Loss of appetite.
+          </label>
+        </div>
+        <div class="checkbox">
+          <label for="warningLethargy">
+            <input type="checkbox" name="warning" value="warningLethargy" id="warningLethargy">
+            Lethargy.
+          </label>
+        </div>
+        <div class="checkbox">
+          <label for="warningHopelessness">
+            <input type="checkbox" name="warning" value="warningHopelessness" id="warningHopelessness">
+            Hopelessness.
+          </label>
+        </div>
+        <div class="checkbox">
+          <label for="warningKick">
+            <input type="checkbox" name="warning" value="warningKick" id="warningKick">
+            Desire to kick dogs and/or cats.
+          </label>
+        </div>
+      </div>
+     <button type="submit">Submit Survey</button>
+    </form>
+    <span id="work-responses">
+      <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+    </span>
+  </div>
+</body>
+</html>
