@@ -26,12 +26,15 @@ function displayResults(score) {
   if (score <= MIN_CAP) {
     $("#scoreResults").text("You are doing great! Keep it up!");
     $(".results-image").append(imageUrl("happy.gif"));
+    $("body").addClass("background-good-score");
   } else if (score > MIN_CAP && score <= MID_CAP) {
     $("#scoreResults").text("You are doing okay, but here are some helpful tips...");
     $(".results-image").append(imageUrl("meh.gif"));
+    $("body").addClass("background-mid-score");
   } else if (score > MID_CAP) {
     $("#scoreResults").text("You should seek help immediately. Please see resources below.");
     $(".results-image").append(imageUrl("send-help.gif"));
+    $("body").addClass("background-bad-score");
   } else {
     alert("Stop trying to break things...");
   }
@@ -43,7 +46,6 @@ function resultsShowAndHide() {
 }
 
 function imageUrl(imgName) {
-  console.log(imgName);
   return "<img src='img/" + imgName + "' alt='An image of your results'>";
 }
 

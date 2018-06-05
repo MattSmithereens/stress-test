@@ -10,3 +10,15 @@ body {
   box-shadow: 2px 2px 10px #4e4e4e;
   margin-top: 20px;
 }
+
+.background-good-score {
+  background-color: #FFAAAA;
+}
+
+.background-mid-score {
+  background-color: #c7d0e5;
+}
+
+.background-bad-score {
+  background-color: #ef3b7a;
+}
