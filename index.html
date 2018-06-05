@@ -20,7 +20,8 @@ Include at least 3 possible results. -->
     <h1>STRESS TEST</h1>
     <form id="stressTest">
       <div class="form-group">
-        <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
+        <!-- warning signs -->
+        <p>Are you experiencing any of these warning signs? (check all that apply)</p>
         <div class="checkbox">
           <label for="warningSleep">
             <input type="checkbox" name="warning" value="warningSleep" id="warningSleep">
@@ -58,10 +59,59 @@ Include at least 3 possible results. -->
           </label>
         </div>
       </div>
+      <!-- health symptoms -->
+      <p>Are you experiencing any of these symptoms? (check all that apply)</p>
+      <div class="checkbox">
+        <label for="symptomBlood">
+          <input type="checkbox" name="warning" value="symptomBlood" id="symptomBlood">
+          High blood pressure.
+        </label>
+      </div>
+      <div class="checkbox">
+        <label for="symptomAnxiety">
+          <input type="checkbox" name="warning" value="symptomAnxiety" id="symptomAnxiety">
+          Anxiety.
+        </label>
+      </div>
+      <div class="checkbox">
+        <label for="symptomHair">
+          <input type="checkbox" name="warning" value="symptomHair" id="symptomHair">
+          Hair loss.
+        </label>
+      </div>
+      <div class="checkbox">
+        <label for="symptomWeight">
+          <input type="checkbox" name="warning" value="symptomWeight" id="symptomWeight">
+          Weight loss/gain.
+        </label>
+      </div>
+      <div class="checkbox">
+        <label for="symptomBags">
+          <input type="checkbox" name="warning" value="symptomBags" id="symptomBags">
+          Bags under eyes.
+        </label>
+      </div>
+      <div class="checkbox">
+        <label for="symptomStinky">
+          <input type="checkbox" name="warning" value="symptomStinky" id="symptomStinky">
+          Aversion to hygene.
+        </label>
+      </div>
+      <div class="checkbox">
+        <label for="symptomPoop">
+          <input type="checkbox" name="warning" value="symptomPoop" id="symptomPoop">
+          Loose/impacted stool.
+        </label>
+      </div>
+      <!-- coping methods -->
+      <p>Are you experiencing any of these symptoms? (check all that apply)</p>
+      <div class="checkbox">
+
+
      <button type="submit">Submit Survey</button>
     </form>
-    <span id="work-responses">
-      <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+    <span id="results">
+      <p><b>text</b> text</p>
     </span>
   </div>
 </body>
